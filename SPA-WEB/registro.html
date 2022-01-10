@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<title>SPA-WEB || REGISTRARSE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="font/css/fontello.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="index.html"><img src="img/user.jpg" alt=""></a>
+      <ul class="nav nav-collapse pull-right">
+        <li><a href="index.html" ><i ></i> INICIO</a></li>
+        <li><a href="servicios.html"><i ></i> SERVICIOS</a></li>
+        <li><a href="sucursales.html"><i ></i> SUCURSALES</a></li>
+        <li><a href="vip.html"><i ></i> SPA-WEB PRO</a></li>
+      </ul>
+      <div class="nav-collapse collapse"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container profile">
+  <h2>REGISTROS</h2>
+
+  <form action="">
+    <div class="form-group">
+      <label for="txtCedula">CEDULA:</label>
+      <input type="text" class="form.control" id="txtCedula" placeholder="Enter Cedula.">
+    </div>
+
+    <div class="form-group">
+      <label for="txtNombre">NOMBRE:</label>
+      <input type="text" class="form.control" id="txtNombre" placeholder="Enter Nombre.">
+    </div>
+
+    <div class="form-group">
+      <label for="txtApellido">APELLIDO:</label>
+      <input type="text" class="form.control" id="txtApellido" placeholder="Enter Apellido.">
+    </div>
+
+    <div class="form-group">
+      <label for="txtDomicilio">DOMICILIO:</label>
+      <input type="text" class="form.control" id="txtDomicilio" placeholder="Enter Domicilio.">
+    </div>
+
+    <div class="form-group">
+      <label for="txtTelefono">TELÉFONO:</label>
+      <input type="text" class="form.control" id="txtTelefono" placeholder="Enter Teléfono.">
+    </div>
+
+    <div class="form-group">
+      <label for="txtEmail">E-MAIL:</label>
+      <input type="mail" class="form.control" id="txtEmail" placeholder="Enter E-MAIL">
+    </div> <br>
+
+    <div class="">
+      <h2 style="font-size: 20px; ">SERVICIO / PRECIO</h2>
+      <select class="form-select mb-5 text-center" aria-label="Default select example" id="txtServicios">
+          <option selected>Selecione</option>
+      </select>
+    </div>
+    
+    <div>
+      <select class="form-select text-center" aria-label="Default select example" id="txtPrecio">
+          <option selected>-------</option>
+      </select>
+    </div>
+    
+  </form>
+
+  <button type="button" class="btn btn-defoult" id="btn-save">GUARDAR</button>
+
+</div>
+
+<div class="container">
+  <h2>LISTA DE REGISTROS</h2>
+  <table class="table table-hover" id="table">
+    <thead>
+      <tr>
+        <th>CÉDULA</th>
+        <th>NOMBRE</th>
+        <th>APELLIDO</th>
+        <th>DOMICILIO</th>
+        <th>TELÉFONO</th>
+        <th>E-MAIL</th>
+        <th>SERVICIO</th>
+        <th>PRECIO</th>
+        <th>SELECT</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+<br>
+
+<div style="height: 300px;">
+
+</div>
+
+
+
+<div class="footer" href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+  <div class="container">
+    <p class="pull-left"><a href="http://dzyngiri.com">www.spa_web.com</a></p>
+    <p class="pull-right"><a href="#myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> CONTACT</a></p>
+  </div>
+</div>
+
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bussinesLogic.js"></script>
+<script src="js/uiLogic.js"></script>
+<script src="js/precio.js"></script>
+
+<script>
+$('#myModal').modal('hidden')
+</script>
+<script src="js/jquery.fancybox.js?v=2.1.5"></script>
+<script>
+$(document).ready(function () {
+    $(".fancybox-thumb").fancybox({
+        helpers: {
+            title: {
+                type: 'inside'
+            },
+            overlay: {
+                css: {
+                    'background': 'rgba(1,1,1,0.65)'
+                }
+            }
+        }
+    });
+});
+</script>
+
+</body>
+
+</html>
